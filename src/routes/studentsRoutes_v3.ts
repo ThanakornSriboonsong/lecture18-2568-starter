@@ -25,6 +25,7 @@ router.get("/", async (req: Request, res: Response) => {
     if (program) {
       let filtered_students = students.filter(
         (student) => student.program === program
+        if(data ==null)
       );
       return res.json({
         success: true,
